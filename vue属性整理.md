@@ -1,0 +1,23 @@
+# 原型
+* $watch
+# 静态api
+# 实例
+* _uid：标识一个vue实例的id
+* _isComponent：组件标识
+* $options：合并且规范化后的配置参数
+  * render
+  * _base
+* _self：vm自己
+* $mount：挂载函数
+* _data：vm.$options.data 执行后返回的值
+  * __ob__：
+    * value:同_data
+    * vmCount
+    * dep：依赖收集
+      * id
+      * subs[]：Watcher
+* method方法
+* $attr/$listeners:高阶组件
+* _watchers：Array
+  * Watcher
+* _update:f()
